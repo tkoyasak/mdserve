@@ -2,5 +2,11 @@
   "$schema": "./node_modules/wrangler/config-schema.json",
   "name": "mdserve",
   "compatibility_date": "2026-05-21",
-  "main": "./src/index.tsx"
+  "main": "./src/index.tsx",
+  "r2_buckets": [
+    {
+      "binding": "BUCKET",
+      "bucket_name": "mdserve-content"
+    }
+  ]
 }
