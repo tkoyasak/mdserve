@@ -1,40 +1,43 @@
 {
-  // Visit https://aka.ms/tsconfig to read more about this file
+  // See <https://www.typescriptlang.org/tsconfig/>.
   "compilerOptions": {
-    "module": "ESNext",
+    // Language and Environment
     "target": "ESNext",
-    "moduleResolution": "bundler",
     "lib": ["ESNext"],
-    "types": ["node", "vite/client", "./worker-configuration.d.ts"],
-
-    // Other Outputs
-    "sourceMap": true,
-    "declaration": true,
-    "declarationMap": true,
-
-    // Stricter Typechecking Options
-    "noUncheckedIndexedAccess": true,
-    "exactOptionalPropertyTypes": true,
-
-    // Style Options
-    // "noImplicitReturns": true,
-    // "noImplicitOverride": true,
-    // "noUnusedLocals": true,
-    // "noUnusedParameters": true,
-    // "noFallthroughCasesInSwitch": true,
-    // "noPropertyAccessFromIndexSignature": true,
-
-    // Recommended Options
-    "strict": true,
     "jsx": "react-jsx",
     "jsxImportSource": "hono/jsx",
-    "verbatimModuleSyntax": true,
-    "isolatedModules": true,
-    "noUncheckedSideEffectImports": true,
     "moduleDetection": "force",
-    "skipLibCheck": true,
 
+    // Modules
+    "module": "ESNext",
+    "moduleResolution": "bundler",
+    "types": ["node", "vite/client", "./worker-configuration.d.ts"],
+    "allowImportingTsExtensions": true,
+    "noUncheckedSideEffectImports": true,
+
+    // Interop Constraints
+    "isolatedModules": true,
+    "erasableSyntaxOnly": true,
+    "verbatimModuleSyntax": true,
+
+    // Type Checking
+    "strict": true,
+    "noUncheckedIndexedAccess": true,
+    "exactOptionalPropertyTypes": true,
+    "noImplicitReturns": true,
+    "noImplicitOverride": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noFallthroughCasesInSwitch": true,
+    "noPropertyAccessFromIndexSignature": true,
+    "allowUnreachableCode": false,
+    "allowUnusedLabels": false,
+
+    // Emit
     "noEmit": true,
-    "allowImportingTsExtensions": true
-  }
+
+    // Completeness
+    "skipLibCheck": true
+  },
+  "include": ["src/**/*", "vite.config.ts"]
 }
