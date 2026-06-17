@@ -1,7 +1,7 @@
 {
-  "$schema": "./node_modules/wrangler/config-schema.json",
+  "$schema": "https://www.unpkg.com/wrangler/config-schema.json",
   "name": "mdserve",
-  "compatibility_date": "2026-05-21",
+  "compatibility_date": "2026-05-18",
   "main": "./src/index.tsx",
   "r2_buckets": [
     {
