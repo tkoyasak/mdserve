@@ -10,11 +10,11 @@
     "cf-typegen": "wrangler types"
   },
   "dependencies": {
-    "@ox-content/wasm": "2.66.0",
-    "hono": "4.12.25"
+    "@ox-content/wasm": "2.70.0",
+    "hono": "4.12.26"
   },
   "devDependencies": {
-    "@cloudflare/vite-plugin": "1.40.1",
+    "@cloudflare/vite-plugin": "1.42.1",
     "@types/node": "25.9.2",
     "vite": "8.0.16",
     "vite-ssr-components": "0.6.1"
